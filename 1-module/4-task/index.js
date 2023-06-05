@@ -1,3 +1,4 @@
 function checkSpam(str) {
-  // ваш код...
+  let upCaseStr = str.toUpperCase();
+  return (upCaseStr.includes(("1xBet").toUpperCase()) || upCaseStr.includes(("XXX").toUpperCase()));
 }
