@@ -8,10 +8,6 @@ export default class ProductCard {
     this.render();
   }
 
-  get elem() {
-    return this.elem;
-  }
-
   render() {
     this.elem = createElement(`
   <div class="card">
@@ -28,11 +24,12 @@ export default class ProductCard {
 </div>
   `);
     this.elem.addEventListener("click", this.onClick);
+    return  this.elem ;
   }
 
-  onClick = (event) => {
+  onClick = () => {
     let myEvent = new CustomEvent('product-add', {
-      detail: event.target,
+      detail: this.product.id,
       bubbles: true,
     });
     this.elem.dispatchEvent(myEvent);

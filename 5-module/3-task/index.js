@@ -1,6 +1,4 @@
 function initCarousel() {
-
-  let carouselList = document.querySelectorAll(".carousel__slide");
   let carousel = document.querySelector(".carousel__inner");
   let buttons = document.querySelector(".carousel");
   let carouselLength = carousel.offsetWidth;
