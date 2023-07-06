@@ -41,9 +41,7 @@ export default class RibbonMenu {
       this.navigation.scrollBy(-this.scrollWidth, 0);
     }
     if (event.target.classList.contains("ribbon__item")) {
-
       event.preventDefault();
-      console.log("target ", event.target.tagName);
       let previousElement = this.elem.querySelector(".ribbon__item_active");
       if (previousElement != null) {
         previousElement.classList.remove("ribbon__item_active");
