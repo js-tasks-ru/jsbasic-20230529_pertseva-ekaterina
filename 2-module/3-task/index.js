@@ -3,7 +3,7 @@ let calculator = {
   read(a, b){
     if (Number.isFinite(a) && Number.isFinite(b)){
       this.object.a = a;
-      this.object.b =b;
+      this.object.b = b;
   }
   },
 
