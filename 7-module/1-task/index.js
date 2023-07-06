@@ -60,8 +60,6 @@ export default class RibbonMenu {
   }
 
   isLeftButtonShouldBeHiden() {
-    console.log("isLeftButtonShouldBeHiden", this.navigation.scrollLeft);
-    console.log("isLeftButtonShouldBeHiden", Boolean(this.navigation.scrollLeft));
     return this.navigation.scrollLeft == 0;
   }
 
